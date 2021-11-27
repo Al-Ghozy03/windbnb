@@ -191,7 +191,7 @@ export default function List() {
                 <div className="flex space-x-3">
                   {i.superHost ? (
                     <React.Fragment>
-                      <p className="border border-gray-400 rounded-lg px-3">
+                      <p className="border font-medium border-gray-400 rounded-lg px-3">
                         Superhost
                       </p>
                     </React.Fragment>
@@ -200,10 +200,10 @@ export default function List() {
                   )}
                   <p className="text-gray-400">{i.type}</p>
                 </div>
-                <div className="flex">
+                <div className="flex shadow-md">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
+                    className="h-5 w-5 text-red-600"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >

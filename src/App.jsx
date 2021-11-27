@@ -2,13 +2,21 @@ import "./App.css";
 import React from "react";
 import Header from "./component/header";
 import List from "./component/list";
+import Search from "./component/search";
 
 function App() {
-  
+  const [search, setSearch] = React.useState(false);
   return (
     <React.Fragment>
-      <div className=" px-16 py-9">
-        <Header></Header>
+      {search ? (
+        <React.Fragment>
+          <Search setSearch={setSearch}></Search>
+        </React.Fragment>
+      ) : (
+        ""
+      )}
+      <div className="px-16 py-9">
+        <Header setSearch={setSearch}></Header>
         <List></List>
       </div>
     </React.Fragment>
