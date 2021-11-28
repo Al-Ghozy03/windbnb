@@ -90,7 +90,7 @@ export default function Search(props) {
               </React.Fragment>
             ) : (
               <React.Fragment>
-                <div className="lg:ml-46%">
+                <div className="lg:ml-33%">
                   <Guest></Guest>
                 </div>
               </React.Fragment>
