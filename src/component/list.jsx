@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 
 export default function List() {
@@ -173,11 +174,11 @@ export default function List() {
   ]);
   return (
     <React.Fragment>
-      <div className="flex items-center justify-between py-24">
+      <div className="flex items-center justify-between lg:py-24 py-12">
         <h2 className="text-3xl font-semibold">Stays in Finland</h2>
         <p className="">{list.length} stays</p>
       </div>
-      <div className="grid grid-cols-3 gap-x-6 gap-y-5">
+      <div className="grid lg:grid-cols-3 gap-x-10 gap-y-14 lg:gap-y-8">
         {list?.map((i, key) => (
           <div key={key}>
             <div className="">
@@ -187,7 +188,7 @@ export default function List() {
                   ({ width: "380px" }, { backgroundImage: `url(${i.photo})` })
                 }
               ></div>
-              <div className="flex justify-between my-6 ">
+              <div className="flex justify-between lg:my-4 mt-4 mb-2 lg:mb-0">
                 <div className="flex space-x-3">
                   {i.superHost ? (
                     <React.Fragment>
@@ -200,7 +201,7 @@ export default function List() {
                   )}
                   <p className="text-gray-400">{i.type}</p>
                 </div>
-                <div className="flex shadow-md">
+                <div className="flex">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-red-600"
@@ -212,7 +213,7 @@ export default function List() {
                   <p>{i.rating}</p>
                 </div>
               </div>
-              <p>{i.title}</p>
+              <p className="font-medium">{i.title}</p>
             </div>
           </div>
         ))}

@@ -15,7 +15,7 @@ function App() {
       ) : (
         ""
       )}
-      <div className="px-16 py-9">
+      <div className="lg:px-16 px-9 py-9">
         <Header setSearch={setSearch}></Header>
         <List></List>
       </div>

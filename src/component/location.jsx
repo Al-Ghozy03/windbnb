@@ -1,6 +1,5 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
 import { helski, oulu, turku, vaasa } from "../redux/action/location";
 
 export default function Location() {
@@ -10,7 +9,7 @@ export default function Location() {
       <div className="flex flex-col space-y-3">
         <div onClick={()=>{
           dispatch(helski())
-        }} style={{width:"490px"}} className="flex items-center space-x-4 cursor-pointer">
+        }} style={{width:"29rem"}} className="flex items-center space-x-4 cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -27,7 +26,7 @@ export default function Location() {
         </div>
         <div onClick={()=>{
           dispatch(turku())
-        }} style={{width:"490px"}} className="flex items-center space-x-4 cursor-pointer">
+        }} style={{width:"29rem"}} className="flex items-center space-x-4 cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -44,7 +43,7 @@ export default function Location() {
         </div>
         <div onClick={()=>{
           dispatch(oulu())
-        }} style={{width:"490px"}} className="flex items-center space-x-4 cursor-pointer">
+        }} style={{width:"29rem"}} className="flex items-center space-x-4 cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -61,7 +60,7 @@ export default function Location() {
         </div>
         <div onClick={()=>{
           dispatch(vaasa())
-        }} style={{width:"490px"}} className="flex items-center space-x-4 cursor-pointer">
+        }} style={{width:"29rem"}} className="flex items-center space-x-4 cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
